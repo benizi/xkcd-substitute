@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "xkcd substitutions",
+  "version": "0.1",
+  "description": "Replaces text per XKCD #1288",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
